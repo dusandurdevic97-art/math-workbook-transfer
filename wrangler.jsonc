@@ -1,0 +1,8 @@
+{
+  "name": "math-workbook-transfer",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-05-01",
+  "workers_dev": true,
+  "durable_objects": {"bindings": [{"name": "RELAY", "class_name": "TransferRelay"}]},
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["TransferRelay"]}]
+}
